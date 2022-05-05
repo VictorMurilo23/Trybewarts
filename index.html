@@ -13,7 +13,8 @@
   </header>
   <main>
   <form action="" id="evaluation-form">
-    <label for="" id="label-family"> Qual é a sua família?
+
+    <label for="radioFamilia" id="label-family"> <p>Qual é a sua família?</p>
     <div class="radioFamilia">
       <input type="radio" name="family" id="front" value="Frontend">
       <label for="front">Família Frontend</label>
@@ -104,10 +105,17 @@
       <input type="radio" name="name" id="10" value="10">10
     </label>
   </label>
+  
   <label for="textarea" class="textarea">Deixe seu comentário: <br>
     <textarea name="comentario" id="textarea" cols="30" rows="10" maxlength="500">
     </textarea>
   </label>
+
+  <div class="box concordar">
+    <label for="agreement" id="label-infos"> <p>Você concorda com o uso das informações acima?</p></label>
+    <input type="checkbox" name="" id="agreement">  
+  </div>
+
 
   </form>
   </main>
