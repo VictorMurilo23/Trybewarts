@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    height: 200px;
+    background-color: rgb(50, 167, 145);
+}
+
+.flex-container {
+    display: flex;
+}
