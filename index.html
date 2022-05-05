@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Trybewarts</title>
 </head>
 <body>
-  <main>
-    <form action="" id="evaluation-form">
-      <label for="" id="label-family"> Qual é a sua família?
-        <div class="radioFamilia">
-          <input type="radio" name="family" id="front" value="Frontend">
-          <label for="front">Família Frontend</label>
-        </div>
-        
-        <div class="radioFamilia">
-          <input type="radio" name="family" id="back" value="Backend">
-          <label for="back">Família Backend</label>
-        </div>
+<header class="header flex-container"></header>
+<main>
+<form action="" id="evaluation-form">
+  <label for="" id="label-family"> Qual é a sua família?
+    <div class="radioFamilia">
+      <input type="radio" name="family" id="front" value="Frontend">
+      <label for="front">Família Frontend</label>
+    </div>
+    
+    <div class="radioFamilia">
+      <input type="radio" name="family" id="back" value="Backend">
+      <label for="back">Família Backend</label>
+    </div>
 
-        <div class="radioFamilia">
-          <input type="radio" name="family" id="full" value="FullStack">
-          <label for="full">Família Fullstack</label>
-        </div>
-      </label>
-    </form>
-  </main>
+    <div class="radioFamilia">
+      <input type="radio" name="family" id="full" value="FullStack">
+      <label for="full">Família Fullstack</label>
+    </div>
+  </label>
+
+  <label for="" id="label-content"> Qual conteúdo você está com mais vontade de aprender?
+    
+    <div class="box">
+      <input type="checkbox" name="" id="hofs" value="HoFs">
+      <label for="hofs">HoFs</label>
+    </div>
+
+    <div class="box">
+      <input type="checkbox" name="" id="jest" value="Jest">
+      <label for="jest">Jest</label>
+    </div>
+    
+    <div>
+      <input type="checkbox" name="" id="promises" value="Promises">
+      <label for="promises">Promises</label>
+    </div>
+
+    <div class="box">
+      <input type="checkbox" name="" id="react" value="React">
+      <label for="react">React</label>
+    </div>
+
+    <div class="box">
+      <input type="checkbox" name="" id="sql" value="SQL">
+      <label for="sql">SQL</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="" id="python" value="Python">
+      <label for="python">Python</label>
+    </div>
+  </label>
+</form>
+</main>
+
 </body>
 </html>
+
