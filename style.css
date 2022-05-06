@@ -14,7 +14,7 @@
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -29,46 +29,46 @@ h1 {
 }
 
 .trybewarts-login {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    width: 1000px;
-    height: 80px;
-    justify-content:space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  width: 500px;
+  height: 80px;
+  justify-content:space-around;
+  align-items: center;
 }
 
 #inEmail {
+  margin: 0 5px;
   font-weight: bold;
-  font-size: xx-large;
+  font-size: medium;
   text-indent: 20px;
   width: 300px;
-  height: 80px;
+  height: 30px;
   border-radius: 10px;
   border-color: whitesmoke;
   background-color: white;
-  color: white;
+  color: black;
 }
 
 #inPassword {
-  font-size: xx-large;
+  font-size: medium;
   font-weight: bold;
   text-indent: 20px;
   width: 300px;
-  height: 80px;
+  height: 30px;
   border-radius: 10px;
   border-color: whitesmoke;
 }
 
 #inButton {
-  font-size: larger;
+  margin: 0 5px;
+  font-size: medium;
   font-weight: bold;
-  width: 300px;
-  height: 80px;
+  width: 100px;
+  height: 30px;
   color: white;
-  font-size: xx-large;
-  font-style:initial;
   font-weight: bold;
   border-radius: 10px;
   border-color: rgb(74, 8, 135);
@@ -76,11 +76,18 @@ h1 {
 }
 
 main {
-  display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 
 #trybewarts-forms-logo {
+    display: flex;
+    order: 2; 
     height: 500px;
     justify-content: space-between;
 }
@@ -91,6 +98,65 @@ main {
   flex-direction: column;
   width: 675px;
 }
+
+#input-name {
+  font-weight: bold;
+  text-indent: 5px;
+  width: 17em;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  background-color: white;
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid black;
+  align-items: center;
+}
+
+#input-lastname {
+  font-weight: bold;
+  text-indent: 5px;
+  width: 17em;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  background-color: white;
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid black;
+  align-items: center;
+}
+
+
+#input-email {
+  font-weight: bold;
+  text-indent: 5px;
+  width: 17em;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  background-color: white;
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid black;
+  align-items: center;
+}
+
+
+#house {
+  font-weight: bold;
+  text-indent: 5px;
+  width: 12.3em;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#labelHouse {
+  border-radius: 10px;
+  border-color: whitesmoke;
+  background-color: white;
+  align-self: center;
+} 
+
 
 #label-family {
   display: flex;
@@ -114,7 +180,7 @@ main {
   flex-direction: column;
 }
 
-form h1 {
+form h2 {
   margin: 10px 0;
   font-size: 1.7rem;
   color: black;
@@ -123,7 +189,7 @@ form h1 {
 
 #evaluation-form .nomeCompleto input, #evaluation-form .emailCasa input{
   padding: 10px;
-  width: 15em;
+  width: 17em;
   margin-right: 5px;
   align-items: center;
   border: 1px solid black;
@@ -131,21 +197,9 @@ form h1 {
 }
 
 #evaluation-form .emailCasa, #evaluation-form .nomeCompleto {
-  padding-top: 5px;
-  justify-content: center;
-  width: 80%;
+  margin: 5px 0;
 }
 
-#evaluation-form select {
-  width: 12.3em;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: white;
-}
-
-#evaluation-form .emailCasa label {
-  align-self: center;
-}
 
 hr#primeirohr {
   margin: 10px 0;
@@ -202,4 +256,12 @@ hr#segundohr {
   border-radius: 10px;
   color: white;
   font-size: 1.1rem;
+}
+
+#agreement {
+  margin-left: 5px;
+}
+
+.comentario textarea {
+  border-radius: 15px;
 }
