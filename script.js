@@ -1,7 +1,7 @@
 const frm = document.querySelector('form');
 console.log(frm);
 
-frm.addEventListener('click', (e) => {
+frm.inButton.addEventListener('click', (e) => {
   e.preventDefault();
   const placeHolderEmail = frm.inEmail.value;
   console.log(placeHolderEmail);
