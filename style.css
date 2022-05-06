@@ -169,3 +169,7 @@ main {
 .concordar {
   align-items: center;
 }
+
+.column {
+  flex-direction: column;
+}
