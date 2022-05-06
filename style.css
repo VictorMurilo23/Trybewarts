@@ -1,9 +1,15 @@
 .header {
     display: flex;
-    height: 200px;
+    height: 100px;
     background-color: rgb(50, 167, 145);
     justify-content: space-between;
     align-items: center;
+    padding: 30px;
+}
+
+h1 {
+  font-size: 80px;
+  color: white;
 }
 
 .flex-container {
@@ -18,17 +24,57 @@
 
 .trybewarts-login {
     display: flex;
-    margin-left: 40px;
-    width: 450px;
-    justify-content: space-between;       
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    width: 1000px;
+    height: 80px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#inEmail {
+  font-weight: bold;
+  font-size: xx-large;
+  text-indent: 20px;
+  width: 300px;
+  height: 80px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  background-color: white;
+  color: white;
+}
+
+#inPassword {
+  font-size: xx-large;
+  font-weight: bold;
+  text-indent: 20px;
+  width: 300px;
+  height: 80px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+}
+
+#inButton {
+  font-size: larger;
+  font-weight: bold;
+  width: 300px;
+  height: 80px;
+  color: white;
+  font-size: xx-large;
+  font-style:initial;
+  font-weight: bold;
+  border-radius: 10px;
+  border-color: rgb(74, 8, 135);
+  background-color: rgb(74, 8, 135);
 }
 
 main {
-    display: flex;
+  display: flex;
 }
 
 
-.trybewarts-forms-logo {
+#trybewarts-forms-logo {
     height: 500px;
     justify-content: space-between;
 }
@@ -55,4 +101,8 @@ main {
 
 .concordar {
   align-items: center;
+}
+
+.column {
+  flex-direction: column;
 }
