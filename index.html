@@ -16,27 +16,32 @@
           <form action="" class="trybewarts-login">
             <input type="text" name="email" placeholder="Email" id="inEmail">
             <input type="password" name="password" placeholder="Senha" id="inPassword">
-            <input type="button" value="Entrar" id="inButton">
+            <button id="inButton">Entrar</button>
           </form>
       </header>
     <main>
         <form id="evaluation-form">
-                  <input type="text" id="input-name" placeholder="Nome">
-                  <input type="text" id="input-lastname" placeholder="Sobrenome">
-                  <input type="text" id="input-email" placeholder="Email">
-                  <label for="houses">Casa:</label>
-                  <select name="houses" id="house">
+                  <h2>Formulário de Avaliação</h2>
+                  <div>
+                    <input type="text" id="input-name" placeholder="Nome">
+                    <input type="text" id="input-lastname" placeholder="Sobrenome">
+                  </div>
+                  <div>
+                    <input type="text" id="input-email" placeholder="Email">
+                    <label for="houses" id="labelHouse">Casa:</label>
+                    <select name="houses" id="house">
                       <option id="gitnoria-house" value="Gitnória">Gitnória</option>
                       <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
                       <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                      <option id="pytheina-house" value="Pytherina">Pytherina</option>
+                      <option id="pytherina-house" value="Pytherina">Pytherina</option>
                   </select>
+                  </div>
         </form>
-              
-              <img src="images/trybewarts-colored.svg" alt="Logo Trybewarts" id="trybewarts-forms-logo">
+              <div>
+                <img src="images/trybewarts-colored.svg" alt="Logo Trybewarts" id="trybewarts-forms-logo">
+              </div>
 
-        <form>
-          
+        <form>          
             <label for="radioFamilia" id="label-family"> <p>Qual é a sua família?</p>
             <div class="radioFamilia">
               <input type="radio" name="family" id="front" value="Frontend">

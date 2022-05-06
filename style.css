@@ -71,10 +71,17 @@ h1 {
 
 main {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 
-.trybewarts-forms-logo {
+#trybewarts-forms-logo {
+    display: flex;
+    order: 2; 
     height: 500px;
     justify-content: space-between;
 }
@@ -83,6 +90,66 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
+}
+
+#input-name {
+  font-weight: bold;
+  font-size: xx-large;
+  text-indent: 20px;
+  width: 300px;
+  height: 80px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  background-color: white;
+  color: white;
+}
+
+#input-lastname {
+  font-weight: bold;
+  font-size: xx-large;
+  text-indent: 20px;
+  width: 300px;
+  height: 80px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  background-color: white;
+  color: white;
+}
+
+#input-email {
+  font-weight: bold;
+  font-size: xx-large;
+  text-indent: 20px;
+  width: 300px;
+  height: 80px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  background-color: white;
+  color: white;
+}
+
+#house {
+  font-weight: bold;
+  font-size: xx-large;
+  text-indent: 20px;
+  width: 300px;
+  height: 80px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  background-color: white;
+  color: gray;
+}
+
+#labelHouse {
+  font-weight: bold;
+  font-size: xx-large;
+  text-indent: 20px;
+  width: 300px;
+  height: 80px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  background-color: white;
+  color: gray;
 }
 
 #label-family {
