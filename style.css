@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
     display: flex;
     height: 100px;
@@ -81,6 +87,7 @@ main {
 
 #evaluation-form {
   display: flex;
+  align-items: center;
   flex-direction: column;
   width: 675px;
 }
@@ -105,4 +112,94 @@ main {
 
 .column {
   flex-direction: column;
+}
+
+form h1 {
+  margin: 10px 0;
+  font-size: 1.7rem;
+  color: black;
+  align-self: center;
+}
+
+#evaluation-form .nomeCompleto input, #evaluation-form .emailCasa input{
+  padding: 10px;
+  width: 15em;
+  margin-right: 5px;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#evaluation-form .emailCasa, #evaluation-form .nomeCompleto {
+  padding-top: 5px;
+  justify-content: center;
+  width: 80%;
+}
+
+#evaluation-form select {
+  width: 12.3em;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#evaluation-form .emailCasa label {
+  align-self: center;
+}
+
+hr#primeirohr {
+  margin: 10px 0;
+  width: 60%;
+}
+
+.parte2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100px;
+  align-items: center;
+  width: 80%;
+}
+
+.parte2 .conteudos {
+  flex-direction: column;
+  padding-left: 10px;
+  height: 100px;
+}
+
+.parte2 .conteudos .todasCheckboxes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 50px;
+}
+
+hr#segundohr {
+  margin-top: -5px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+#label-rate label{
+  padding: 0 5px;
+  
+}
+
+.comentario {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 80%;
+  margin: 5px 0;
+}
+
+#submit-btn {
+  margin-top: 5px;
+  width: 80%;
+  height: 2em;
+  border: 1px solid #503783;
+  background-color: #503783;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
 }
