@@ -10,9 +10,31 @@
 <body>
   <header class="header flex-container">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts no Header">
+
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+
+    <form action="" class="trybewarts-login">
+      <input type="text" name="email" placeholder="Email" id="inEmail">
+      <input type="password" name="password" placeholder="Senha" id="inPassword">
+      <input type="button" value="Entrar" id="inButton">
+    </form>
+
   </header>
   <main>
   <form action="" id="evaluation-form">
+    <input type="text" id="input-name" placeholder="Nome">
+    <input type="text" id="input-lastname" placeholder="Sobrenome">
+    <input type="text" id="input-email" placeholder="Email">
+    <label for="houses">Casa:</label>
+    <select name="houses" id="house">
+        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+        <option id="corvinode-house" value="Corvinode">Corvinode</option>
+        <option id="pytheina-house" value="Pytherina">Pytherina</option>
+    </select>
+
+
+
 
     <label for="radioFamilia" id="label-family"> <p>Qual é a sua família?</p>
     <div class="radioFamilia">
@@ -119,8 +141,13 @@
   <button type="submit" id="submit-btn">Enviar</button>
 
   </form>
+        
+
+        
+    
+              <img src="images/trybewarts-colored.svg" alt="Logo Trybewarts" id="trybewarts-forms-logo">
   </main>
 
+<script src="script.js"></script> 
 </body>
 </html>
-
