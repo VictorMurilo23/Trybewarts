@@ -30,3 +30,6 @@ counter.innerText = textArea.attributes.maxlength.nodeValue;
 textArea.addEventListener('keyup', () => {
   counter.innerText = 500 - textArea.value.length;
 });
+
+const family = document.querySelector('#house').value;
+console.log(family);
