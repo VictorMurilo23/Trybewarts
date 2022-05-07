@@ -32,7 +32,3 @@ textArea.addEventListener('keyup', () => {
   const numbers = counter.innerText - characters.length;
   counter.innerText = numbers;
 });
-
-// counter.innerText = 500 - textArea.attributes.maxlength.nodeValue;
-
-
