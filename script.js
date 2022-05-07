@@ -13,3 +13,26 @@ frm.inButton.addEventListener('click', (e) => {
     alert('Email ou senha inválidos.');
   }
 });
+
+const checkAgreement = document.querySelector('#agreement');
+const btnSend = document.querySelector('#submit-btn');
+
+checkAgreement.addEventListener('change', () => {
+  if (checkAgreement.checked) {
+    btnSend.disabled = false;
+  }
+});
+
+const textArea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+counter.innerText = textArea.attributes.maxlength.nodeValue;
+
+textArea.addEventListener('keyup', () => {
+  const characters = textArea.value.split('');
+  const numbers = counter.innerText - characters.length;
+  counter.innerText = numbers;
+});
+
+// counter.innerText = 500 - textArea.attributes.maxlength.nodeValue;
+
+
