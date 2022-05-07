@@ -264,7 +264,8 @@ hr#segundohr {
 
 .comentario textarea {
   border-radius: 15px;
-  text-align:start
+  text-align:start;
+  padding: 5px;
 }
 
 footer {

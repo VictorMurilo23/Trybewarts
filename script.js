@@ -28,11 +28,5 @@ const counter = document.querySelector('#counter');
 counter.innerText = textArea.attributes.maxlength.nodeValue;
 
 textArea.addEventListener('keyup', () => {
-  const characters = textArea.value.split('');
-  const numbers = counter.innerText - characters.length;
-  counter.innerText = numbers;
+  counter.innerText = 500 - textArea.value.length;
 });
-
-// counter.innerText = 500 - textArea.attributes.maxlength.nodeValue;
-
-
