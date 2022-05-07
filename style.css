@@ -196,12 +196,12 @@ form h2 {
   border-radius: 10px;
 }
 
-#evaluation-form .emailCasa, #evaluation-form .nomeCompleto {
+#evaluation-form .emailCasa , #evaluation-form .nomeCompleto {
   margin: 5px 0;
 }
 
 
-hr#primeirohr {
+#primeirohr {
   margin: 10px 0;
   width: 60%;
 }
@@ -271,9 +271,8 @@ hr#segundohr {
 footer {
   background-color: #46685b;
   color: white;
-  padding: 20px;
+  margin-top: 10px;
+  padding: 15px;
   text-align: center;
-  bottom: 0;
-  position: fixed;
   width: 100%;
 }
