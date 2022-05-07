@@ -81,3 +81,5 @@ btnSend.addEventListener('click', () => {
   Avaliação: ${salvado.avaliacao}
   Observações: ${salvado.comentario}`;
 });
+const family = document.querySelector('#house').value;
+console.log(family);

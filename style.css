@@ -5,12 +5,12 @@
 }
 
 .header {
-    display: flex;
-    height: 100px;
-    background-color: rgb(50, 167, 145);
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
+  display: flex;
+  height: 100px;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
 }
 
 h1 {
@@ -19,29 +19,28 @@ h1 {
 }
 
 .flex-container {
-    display: flex;
+  display: flex;
 }
 
 .trybewarts-header-logo {
-    height: 100px;
-    align-self: center;
-    margin-left: 40px;    
+  height: 100px;
+  align-self: center;
+  margin-left: 40px;
 }
 
 .trybewarts-login {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   align-content: stretch;
   width: 500px;
   height: 80px;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
 }
 
 #inEmail {
   margin: 0 5px;
-  font-weight: bold;
+  font-weight: 800;
   font-size: medium;
   text-indent: 20px;
   width: 300px;
@@ -54,7 +53,7 @@ h1 {
 
 #inPassword {
   font-size: medium;
-  font-weight: bold;
+  font-weight: 800;
   text-indent: 20px;
   width: 300px;
   height: 30px;
@@ -65,31 +64,29 @@ h1 {
 #inButton {
   margin: 0 5px;
   font-size: medium;
-  font-weight: bold;
+  font-weight: 800;
   width: 100px;
   height: 30px;
   color: white;
-  font-weight: bold;
   border-radius: 10px;
   border-color: rgb(74, 8, 135);
   background-color: rgb(74, 8, 135);
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: flex-start;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 
 #trybewarts-forms-logo {
-    display: flex;
-    order: 2; 
-    height: 500px;
-    justify-content: space-between;
+  display: flex;
+  order: 2;
+  height: 500px;
+  justify-content: space-between;
 }
 
 #evaluation-form {
@@ -100,7 +97,7 @@ main {
 }
 
 #input-name {
-  font-weight: bold;
+  font-weight: 800;
   text-indent: 5px;
   width: 17em;
   border-radius: 10px;
@@ -113,7 +110,7 @@ main {
 }
 
 #input-lastname {
-  font-weight: bold;
+  font-weight: 800;
   text-indent: 5px;
   width: 17em;
   border-radius: 10px;
@@ -127,7 +124,7 @@ main {
 
 
 #input-email {
-  font-weight: bold;
+  font-weight: 800;
   text-indent: 5px;
   width: 17em;
   border-radius: 10px;
@@ -141,7 +138,7 @@ main {
 
 
 #house {
-  font-weight: bold;
+  font-weight: 800;
   text-indent: 5px;
   width: 12.3em;
   border-radius: 10px;
@@ -155,8 +152,7 @@ main {
   border-color: whitesmoke;
   background-color: white;
   align-self: center;
-} 
-
+}
 
 #label-family {
   display: flex;
@@ -187,7 +183,7 @@ form h2 {
   align-self: center;
 }
 
-#evaluation-form .nomeCompleto input, #evaluation-form .emailCasa input{
+#evaluation-form .nomeCompleto input , #evaluation-form .emailCasa input {
   padding: 10px;
   width: 17em;
   margin-right: 5px;
@@ -201,15 +197,14 @@ form h2 {
 }
 
 
-#primeirohr {
+hr #primeirohr {
   margin: 10px 0;
   width: 60%;
 }
 
 .parte2 {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   height: 100px;
   align-items: center;
   width: 80%;
@@ -223,20 +218,18 @@ form h2 {
 
 .parte2 .conteudos .todasCheckboxes {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   height: 50px;
 }
 
-hr#segundohr {
+hr #segundohr {
   margin-top: -5px;
   margin-bottom: 10px;
   width: 80%;
 }
 
-#label-rate label{
+#label-rate label {
   padding: 0 5px;
-  
 }
 
 .comentario {
@@ -251,8 +244,8 @@ hr#segundohr {
   margin-top: 5px;
   width: 80%;
   height: 2em;
-  border: 1px solid #503783;
-  background-color: #503783;
+  border: 1px solid rgb(80, 55, 131);
+  background-color: rgb(80, 55, 131);
   border-radius: 10px;
   color: white;
   font-size: 1.1rem;
@@ -264,12 +257,12 @@ hr#segundohr {
 
 .comentario textarea {
   border-radius: 15px;
-  text-align:start;
+  text-align: start;
   padding: 5px;
 }
 
 footer {
-  background-color: #46685b;
+  background-color: rgb(70, 104, 91);
   color: white;
   margin-top: 10px;
   padding: 15px;
