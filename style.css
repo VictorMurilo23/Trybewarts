@@ -5,142 +5,78 @@
 }
 
 .header {
+  padding: 10px;
   display: flex;
-  height: 100px;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 30px;
 }
 
-h1 {
-  font-size: 1.5rem;
+.headerImageAndTitle {
+  display: flex;
+  flex-direction: row;
+}
+
+.headerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
 
-.flex-container {
-  display: flex;
-}
-
-.trybewarts-header-logo {
-  height: 100px;
-  align-self: center;
-  margin-left: 40px;
+.headerImage .trybewarts-header-logo {
+  height: 3em;
 }
 
 .trybewarts-login {
   display: flex;
-  flex-direction: row;
-  align-content: stretch;
-  width: 500px;
-  height: 80px;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
   align-items: center;
 }
 
-#inEmail {
-  margin: 0 5px;
-  font-weight: 800;
-  font-size: medium;
-  text-indent: 20px;
-  width: 300px;
-  height: 30px;
-  border-radius: 10px;
-  border-color: whitesmoke;
-  background-color: white;
-  color: black;
+.trybewarts-login input {
+  border: 1px solid black;
+  text-indent: 4px;
 }
 
-#inPassword {
-  font-size: medium;
-  font-weight: 800;
-  text-indent: 20px;
-  width: 300px;
-  height: 30px;
+.loginInput {
   border-radius: 10px;
-  border-color: whitesmoke;
+  width: 10em;
+  height: 2em;
 }
 
 #inButton {
-  margin: 0 5px;
-  font-size: medium;
   font-weight: 800;
-  width: 100px;
-  height: 30px;
   color: white;
-  border-radius: 10px;
   border-color: rgb(74, 8, 135);
   background-color: rgb(74, 8, 135);
 }
 
-main {
-  display: flex;
-  flex-direction: row;
-  align-content: flex-start;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-
 #trybewarts-forms-logo {
-  display: flex;
+  width: 2em;
   order: 2;
   height: 500px;
-  justify-content: space-between;
 }
 
 #evaluation-form {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  width: 675px;
-}
-
-#input-name {
-  font-weight: 800;
-  text-indent: 5px;
-  width: 17em;
-  border-radius: 10px;
-  border-color: whitesmoke;
-  background-color: white;
-  padding: 10px;
-  margin-right: 5px;
-  border: 1px solid black;
   align-items: center;
 }
 
-#input-lastname {
-  font-weight: 800;
-  text-indent: 5px;
-  width: 17em;
+.basicInfoInput {
+  width: 15em;
   border-radius: 10px;
-  border-color: whitesmoke;
-  background-color: white;
-  padding: 10px;
-  margin-right: 5px;
-  border: 1px solid black;
-  align-items: center;
+  padding: 4px;
+  text-indent: 4px;
 }
-
-
-#input-email {
-  font-weight: 800;
-  text-indent: 5px;
-  width: 17em;
-  border-radius: 10px;
-  border-color: whitesmoke;
-  background-color: white;
-  padding: 10px;
-  margin-right: 5px;
-  border: 1px solid black;
-  align-items: center;
-}
-
 
 #house {
-  font-weight: 800;
-  text-indent: 5px;
-  width: 12.3em;
+  text-indent: 4px;
+  padding: 4px;
+  width: 15em;
   border-radius: 10px;
   border-color: whitesmoke;
   background-color: white;
@@ -166,84 +102,130 @@ main {
 
 .box {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.nameContainer {
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.emailAndHouseContainer {
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.emailAndHouseContainer label {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .concordar {
   align-items: center;
 }
 
-.column {
-  flex-direction: column;
-}
-
-form h2 {
-  margin: 10px 0;
+h2 {
+  margin-top: 12px;
+  margin-bottom: 12px;
   font-size: 1.7rem;
   color: black;
   align-self: center;
 }
 
-#evaluation-form .nomeCompleto input , #evaluation-form .emailCasa input {
-  padding: 10px;
-  width: 17em;
-  margin-right: 5px;
-  align-items: center;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-#evaluation-form .emailCasa , #evaluation-form .nomeCompleto {
-  margin: 5px 0;
-}
-
-
-hr #primeirohr {
-  margin: 10px 0;
-  width: 60%;
-}
-
-.parte2 {
+.familyContainer {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
   display: flex;
-  flex-flow: column wrap;
-  height: 100px;
-  align-items: center;
-  width: 80%;
-}
-
-.parte2 .conteudos {
   flex-direction: column;
-  padding-left: 10px;
-  height: 100px;
+  gap: 11px;
+  justify-content: center;
+  align-items: center;
 }
 
-.parte2 .conteudos .todasCheckboxes {
+.familyAndContentsContainer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contents {
+  flex-direction: column;
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.contents span {
+  text-align: center;
+}
+
+.todasCheckboxes {
+  display: flex;
+  text-align: center;
   flex-flow: column wrap;
   height: 50px;
 }
 
-hr #segundohr {
-  margin-top: -5px;
-  margin-bottom: 10px;
-  width: 80%;
+.rateContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 4px;
+
+  /* height: 50px; */
 }
 
-#label-rate label {
-  padding: 0 5px;
+.textAreaLabel span {
+  text-align: start;
+}
+
+.rateContainer span {
+  font-size: 1.1rem;
+}
+
+.rateContainer label span {
+  font-size: 1.3rem;
+}
+
+.rateContainer label input {
+  height: 1.5em;
 }
 
 .comentario {
   display: flex;
   flex-direction: column;
-  align-self: center;
+
+  /* align-self: center; */
+  align-items: center;
+  margin: auto;
   width: 80%;
-  margin: 5px 0;
+}
+
+
+.textAreaLabel {
+  display: flex;
+
+  /* align-items: center; */
+
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+
+#textarea {
+  border-radius: 15px;
+
+  /* text-align: start; */
+  padding: 6px;
 }
 
 #submit-btn {
-  margin-top: 5px;
   width: 80%;
   height: 2em;
+  margin-bottom: 12px;
   border: 1px solid rgb(80, 55, 131);
   background-color: rgb(80, 55, 131);
   border-radius: 10px;
@@ -252,22 +234,16 @@ hr #segundohr {
 }
 
 #agreement {
-  margin-left: 5px;
-}
 
-.comentario textarea {
-  border-radius: 15px;
-  text-align: start;
-  padding: 5px;
+  /* margin-left: 5px; */
 }
 
 footer {
   background-color: rgb(70, 104, 91);
   color: white;
-  margin-top: 10px;
-  padding: 15px;
+  padding: 4px;
   text-align: center;
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }

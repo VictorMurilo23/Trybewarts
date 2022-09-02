@@ -1,13 +1,13 @@
-const frm = document.querySelector('.trybewarts-login');
-console.log(frm);
+const loginEmail = document.querySelector('#emailInput');
+const loginPassword = document.querySelector('#passwordInput');
+const loginSubmitBtn = document.querySelector('#inButton');
 
-frm.inButton.addEventListener('click', (e) => {
+loginSubmitBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  const placeHolderEmail = frm.inEmail.value;
-  console.log(placeHolderEmail === 'tryber@teste.com');
-  const placeHolderPassword = frm.inPassword.value;
-  console.log(placeHolderPassword === '123456');
-  if (placeHolderEmail === 'tryber@teste.com' && placeHolderPassword === '123456') {
+  if (
+    loginEmail.value === 'tryber@teste.com'
+    && loginPassword.value === '123456'
+  ) {
     alert('Olá, Tryber!');
   } else {
     alert('Email ou senha inválidos.');
@@ -35,7 +35,11 @@ const salvado = {};
 const conteudos = [];
 
 function salvarNota() {
-  for (let index = 0; index < document.getElementsByName('rate').length; index += 1) {
+  for (
+    let index = 0;
+    index < document.getElementsByName('rate').length;
+    index += 1
+  ) {
     if (document.getElementsByName('rate')[index].checked === true) {
       salvado.avaliacao = document.getElementsByName('rate')[index].value;
     }
@@ -43,7 +47,11 @@ function salvarNota() {
 }
 
 function salvarFamilia() {
-  for (let index = 0; index < document.getElementsByName('family').length; index += 1) {
+  for (
+    let index = 0;
+    index < document.getElementsByName('family').length;
+    index += 1
+  ) {
     if (document.getElementsByName('family')[index].checked === true) {
       salvado.familia = document.getElementsByName('family')[index].value;
     }
@@ -51,7 +59,11 @@ function salvarFamilia() {
 }
 
 function salvarMaterias() {
-  for (let index = 0; index < document.querySelectorAll('.subject').length; index += 1) {
+  for (
+    let index = 0;
+    index < document.querySelectorAll('.subject').length;
+    index += 1
+  ) {
     if (document.querySelectorAll('.subject')[index].checked === true) {
       conteudos.push(document.querySelectorAll('.subject')[index].value);
     }
@@ -81,5 +93,3 @@ btnSend.addEventListener('click', () => {
   Avaliação: ${salvado.avaliacao}
   Observações: ${salvado.comentario}`;
 });
-const family = document.querySelector('#house').value;
-console.log(family);
