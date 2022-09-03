@@ -54,10 +54,14 @@
   background-color: rgb(74, 8, 135);
 }
 
+.trybewartsLogoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
 #trybewarts-forms-logo {
-  width: 2em;
-  order: 2;
-  height: 500px;
+  width: 20em;
 }
 
 #evaluation-form {
@@ -121,8 +125,12 @@
   flex-direction: column;
 }
 
-
 .concordar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  gap: 4px;
   align-items: center;
 }
 
@@ -174,56 +182,52 @@ h2 {
   align-items: center;
   margin-bottom: 12px;
   gap: 4px;
-
-  /* height: 50px; */
-}
-
-.textAreaLabel span {
-  text-align: start;
 }
 
 .rateContainer span {
   font-size: 1.1rem;
 }
 
-.rateContainer label span {
+.rateButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.rateButtons label span {
   font-size: 1.3rem;
 }
 
-.rateContainer label input {
+.rateButtons label input {
   height: 1.5em;
 }
 
 .comentario {
   display: flex;
   flex-direction: column;
-
-  /* align-self: center; */
-  align-items: center;
+  position: relative;
   margin: auto;
-  width: 80%;
 }
 
+.wordsCounterContainer {
+  text-align: right;
+}
 
 .textAreaLabel {
   display: flex;
-
-  /* align-items: center; */
-
-  /* justify-content: center; */
   flex-direction: column;
 }
 
-
 #textarea {
   border-radius: 15px;
-
-  /* text-align: start; */
+  width: 20em;
   padding: 6px;
 }
 
 #submit-btn {
-  width: 80%;
+  width: 10em;
   height: 2em;
   margin-bottom: 12px;
   border: 1px solid rgb(80, 55, 131);
@@ -233,9 +237,11 @@ h2 {
   font-size: 1.1rem;
 }
 
-#agreement {
-
-  /* margin-left: 5px; */
+#submit-btn:disabled {
+  border: 1px solid rgba(80, 55, 131, 0.507);
+  background-color: rgba(80, 55, 131, 0.445);
+  border-radius: 10px;
+  color: white;
 }
 
 footer {
@@ -246,4 +252,29 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
+}
+
+.savedInfoContainer {
+  font-size: 1.4rem;
+  margin-top: 12px;
+}
+
+@media ( min-width : 750px ) {
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 18px;
+  }
+
+  #evaluation-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #trybewarts-forms-logo {
+    width: 30em;
+  }
 }

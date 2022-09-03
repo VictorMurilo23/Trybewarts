@@ -15,23 +15,27 @@
             class="trybewarts-header-logo"
             src="images/trybewarts-header-logo.svg"
             alt="Logo Trybewarts no Header"
-            />
-          </div>
-          <div class="headerTitle">
-            <h1 id="trybewarts-header-title">rybewarts</h1>
-          </div>
+          />
+        </div>
+        <div class="headerTitle">
+          <h1 id="trybewarts-header-title">rybewarts</h1>
+        </div>
       </div>
 
-
-      <form action="" class="trybewarts-login">
-        <input type="text" name="email" placeholder="Email" id="emailInput" class="loginInput" />
+      <form class="trybewarts-login">
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          id="emailInput"
+          class="loginInput"
+        />
         <input
           type="password"
           id="passwordInput"
           class="loginInput"
           name="password"
           placeholder="Senha"
-          
         />
         <button id="inButton" class="loginInput">Entrar</button>
       </form>
@@ -40,9 +44,15 @@
       <form id="evaluation-form">
         <h2>Formulário de Avaliação</h2>
         <div class="box nameContainer">
-          <input type="text" class="basicInfoInput" id="input-name" placeholder="Nome" required />
           <input
-          class="basicInfoInput"
+            type="text"
+            class="basicInfoInput"
+            id="input-name"
+            placeholder="Nome"
+            required
+          />
+          <input
+            class="basicInfoInput"
             type="text"
             id="input-lastname"
             placeholder="Sobrenome"
@@ -50,7 +60,13 @@
           />
         </div>
         <div class="box emailAndHouseContainer">
-          <input type="text" class="basicInfoInput" id="input-email" placeholder="Email" required />
+          <input
+            type="text"
+            class="basicInfoInput"
+            id="input-email"
+            placeholder="Email"
+            required
+          />
           <label for="houses" id="labelHouse">
             <span>Casa:</span>
             <select name="houses" id="house">
@@ -87,8 +103,8 @@
 
           <div class="contents">
             <span id="label-content" class="box">
-              Qual conteúdo você está com mais vontade de aprender?</span
-            >
+              Qual conteúdo você está com mais vontade de aprender?
+            </span>
             <div class="todasCheckboxes">
               <div class="checkbox">
                 <input
@@ -156,55 +172,48 @@
 
         <div class="rateContainer">
           <span>Como você avalia a Trybewarts?</span>
-          <label for="1">
-            <input type="radio" name="rate" id="1" value="1" />
-            <span>1</span>
-          </label>
-
-          <label for="2">
-            <input type="radio" name="rate" id="2" value="2" />
-            <span>2</span>
-          </label>
-
-          <label for="3">
-            <input type="radio" name="rate" id="3" value="3" />
-            <span>3</span>
-          </label>
-
-          <label for="4">
-            <input type="radio" name="rate" id="4" value="4" />
-            <span>4</span>
-          </label>
-
-          <label for="5">
-            <input type="radio" name="rate" id="5" value="5" />
-            <span>5</span>
-          </label>
-
-          <label for="6">
-            <input type="radio" name="rate" id="6" value="6" />
-            <span>6</span>
-          </label>
-
-          <label for="7">
-            <input type="radio" name="rate" id="7" value="7" />
-            <span>7</span>
-          </label>
-
-          <label for="8">
-            <input type="radio" name="rate" id="8" value="8" />
-            <span>8</span>
-          </label>
-
-          <label for="9">
-            <input type="radio" name="rate" id="9" value="9" />
-            <span>9</span>
-          </label>
-
-          <label for="10">
-            <input type="radio" name="rate" id="10" value="10" />
-            <span>10</span>
-          </label>
+          <div class="rateButtons">
+            <label for="1">
+              <input type="radio" name="rate" id="1" value="1" />
+              <span>1</span>
+            </label>
+            <label for="2">
+              <input type="radio" name="rate" id="2" value="2" />
+              <span>2</span>
+            </label>
+            <label for="3">
+              <input type="radio" name="rate" id="3" value="3" />
+              <span>3</span>
+            </label>
+            <label for="4">
+              <input type="radio" name="rate" id="4" value="4" />
+              <span>4</span>
+            </label>
+            <label for="5">
+              <input type="radio" name="rate" id="5" value="5" />
+              <span>5</span>
+            </label>
+            <label for="6">
+              <input type="radio" name="rate" id="6" value="6" />
+              <span>6</span>
+            </label>
+            <label for="7">
+              <input type="radio" name="rate" id="7" value="7" />
+              <span>7</span>
+            </label>
+            <label for="8">
+              <input type="radio" name="rate" id="8" value="8" />
+              <span>8</span>
+            </label>
+            <label for="9">
+              <input type="radio" name="rate" id="9" value="9" />
+              <span>9</span>
+            </label>
+            <label for="10">
+              <input type="radio" name="rate" id="10" value="10" />
+              <span>10</span>
+            </label>
+          </div>
         </div>
 
         <div class="comentario">
@@ -217,12 +226,12 @@
               id="textarea"
             ></textarea>
           </label>
-          <div>
+          <div class="wordsCounterContainer">
             <p class="wordsCounter"><span id="counter">0</span> Caracteres</p>
           </div>
         </div>
 
-        <div class="box concordar">
+        <div class="concordar">
           <label for="agreement" id="label-infos">
             Você concorda com o uso das informações acima?</label
           >
@@ -231,13 +240,14 @@
 
         <button type="submit" id="submit-btn" disabled>Enviar</button>
       </form>
-      <!-- <img
-        src="images/trybewarts-colored.svg"
-        alt="Logo Trybewarts"
-        id="trybewarts-forms-logo"
-      /> -->
+      <div class="trybewartsLogoContainer">
+        <img
+          src="images/trybewarts-colored.svg"
+          alt="Logo Trybewarts"
+          id="trybewarts-forms-logo"
+        />
+      </div>
     </main>
-
     <footer>Direitos reservados à Trybewarts©</footer>
     <script src="script.js"></script>
   </body>
